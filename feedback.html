@@ -1,0 +1,208 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="feedback.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar h-25">
+
+        <!-- location -->
+         <ul class="list-unstyled">
+        <li> 
+           <button type="button" class="btn navbar-icon ms-2" data-bs-toggle="modal" data-bs-target="#locationModal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill"
+            viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+          </svg>
+          <span class="d-none d-sm-inline">Change Location</span>
+        </button>
+      </li>
+    
+        <!-- Modal -->
+        <div class="modal fade h-100" id="locationModal" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="locationModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered"  role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body">
+                <div class="d-flex justify-content-center">
+                  <img src="assets/logo.png" width="150px" alt="">
+                </div>
+                <h5 class="text-center">Change your Location</h5>
+                <div class="dropdown w-100">
+                  <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton" aria-haspopup="true" style="background-color: #4B2E2E !important; ">
+                      Select Location
+                  </button>
+                  <div class="dropdown-menu w-100 dropdown_locations" aria-labelledby="dropdownMenuButton" >
+                      <a class="dropdown-item location-item" href="#">Gulshan-e-Iqbal</a>
+                      <a class="dropdown-item location-item" href="#">Gulistan-e-Johar</a>
+                      <a class="dropdown-item location-item" href="#">North Nazimabad</a>
+                      <a class="dropdown-item location-item" href="#">Malir</a>
+                      <a class="dropdown-item location-item" href="#">PECHS</a>
+                      <a class="dropdown-item location-item" href="#">PIB Colony</a>
+                      <a class="dropdown-item location-item" href="#">DHA</a>
+                      <a class="dropdown-item location-item" href="#">Clifton</a>
+                      <a class="dropdown-item location-item" href="#">Saddar</a>
+                      <a class="dropdown-item location-item" href="#">Korangi</a>
+                  </div>
+              </div>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #4b2e2ebc;">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" style="background-color: #4B2E2E !important; border: #4B2E2E !important;">Done</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- call -->
+        <li><button class="btn navbar-icon  ms-2 mt-2 mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+          </svg>
+          <span class="d-none d-sm-inline">0336-xxxxxxx</span>
+        </button> 
+        </li>
+       </ul>
+        <!-- logo -->
+    <div >
+        <img src="assets/logo.png" width="120px" alt="logo" class="navbar-brand img-fluid d-flex justify-content-center ">
+      </div>
+     <ul class="sandwich-cart d-lg-flex d-sm-block list-unstyled">
+      <!-- sandwich -->
+      <li><a class="btn sandwich " data-bs-toggle="offcanvas" href="#SandwichOffcanvas" role="button"
+      aria-controls="offcanvasExample">
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+    </a>
+    </li>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="SandwichOffcanvas" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart!</h5> -->
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body offcanvas-links ">
+        <ul class="list-unstyled">
+          <li class="mb-1 "><a href="index.html">Home</a></li>
+          <li class="mb-1"><a href="about.html">About</a></li>
+          <li class="mb-1"><a href="feedback.html">Feedback</a></li>
+    
+        </ul>
+      </div>
+    </div>
+    
+      <!-- cart -->
+        <li><a class="btn position-relative cart " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+          aria-controls="offcanvasExample">
+          <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill ">
+            0
+            <span class="visually-hidden">items in cart</span>
+          </span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart2 "
+            viewBox="0 0 16 16">
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+          </svg>
+        </a>
+      </li>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart!</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-flex justify-content-center align-items-center">
+            <div>
+              <img src="assets/empty cart.jpg" alt="empty cart" class="img-fluid ">
+            </div>
+          </div>
+        </div>
+      </div>
+      </nav>
+
+<section class="container py-5">
+    <h2 class="text-center mb-4">We'd love your feedback!</h2>
+    <form class="row g-3">
+      
+      <div class="col-12 col-md-6 col-sm-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+  
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+  
+      <div class="col-md-12 ">
+        <label for="rating" class="form-label">How would you rate us?</label>
+        <select id="rating" class="form-select" required>
+          <option selected disabled value="">Choose...</option>
+          <option>⭐ Poor</option>
+          <option>⭐⭐ Fair</option>
+          <option>⭐⭐⭐ Good</option>
+          <option>⭐⭐⭐⭐ Very Good</option>
+          <option>⭐⭐⭐⭐⭐ Excellent</option>
+        </select>
+      </div>
+  
+      <div class="col-md-12">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Write your feedback here..." required></textarea>
+      </div>
+  
+      <div class="col-12 text-center">
+        <button type="submit" class="btn button px-4 mt-3">Submit Feedback</button>
+      </div>
+      
+    </form>
+  </section>
+  <footer>
+    <div class="container mt-2">
+      <div class="row text-center text-md-start mt-lg-3">
+  
+        <div class="col-12 col-lg-3 col-md-4 mb-3">
+    <figure><img src="assets/logo.png" width="150px" alt="">
+    <figcaption class="ms-4">Where taste meets tradition and excellence is our promise.
+      Every recipe, every layer, every detail—
+      crafted to exceed expectations and sweeten your moments.</figcaption></figure>
+    </div>
+    <ul class="list-unstyled  col-12 col-lg-3 col-md-4 mb-3">
+      <h3>Links</h3>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+  
+    <ul class=" list-unstyled col-12 col-lg-3 col-md-4 mb-3">  
+      <h3>Contact Us!</h3>    
+      <li><a href=""><img src="assets/facebook.png" alt="" height="32px" class="mt-1 social_icon"></a></li>
+      <li><a href=""><img src="assets/instagram.png" alt="" height="32px" class="mt-1 social_icon"></a></li>
+      <li><a href=""><img src="assets/whatsapp.png" alt="" height="32px" class="mt-1 social_icon" ></a></li>
+  </ul>
+  <ul  class="list-unstyled col-12 col-lg-3 col-md-4 mb-3">
+    <li><h3>Location</h3></li>
+    <li><img src="assets/location.png" width="32px"  alt="" class="social_icon me-2"><span >Shop no:x, Street-xx, ABC road, ABC city </span></li>
+    <li><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d452.27327309579147!2d67.08940442651512!3d24.925726504255973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f60a0781265%3A0x2befaba123014ab1!2sSMIT%20Gulshan%20Campus!5e0!3m2!1sen!2s!4v1744562589140!5m2!1sen!2s" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+  </ul>
+  </div>
+    </div>
+  <hr>
+  <p class="text-center copyright_bar mb-0">&#169; 2025 Neha Shoaib. All right reserved.</p>
+      </div>
+  
+  </footer>
+        
+</body>
+</html>
+
