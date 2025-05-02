@@ -9,13 +9,39 @@ body{
 .card img{
     height: 100%;
 }
+footer .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  footer .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+.content-wrapper{
+    overflow: hidden !important;
+}  
 a{
     text-decoration: none !important;
     color: #FFF5E1 !important;
 }
-.dropdown_locations >a{
-    color: #3E2723 !important;
-}
+.modal-select,  .location-item{
+    background-color: #3E2723 !important;
+    color: #F4C2C2 !important;
+    text-align: center;
+  }
+  .location-item:hover {
+    background-color: #F8A6B4 !important;
+    color: #FFF5E1 !important;
+  }
+  
+  
 a:hover, button:hover{
     color: #D9A5A5 !important;
     cursor: url('assets/pastry-bag.png') 10 10, pointer !important;
@@ -96,13 +122,25 @@ border:#3E2723 !important;
 }
 .cart, .sandwich{
     color: #FFF6EB !important;
+    
 }
 .modal-content{
-    background-color:#FFF6EB !important ;
+    background-color:#ffffff !important ;
 }
-.modal>h5,.modal>button , .offcanvas-body{
+.modal>h5,.modal>button , .offcanvas-body, .offcanvas-header{
     color:#4B2E2E !important;
+    background-color: white;
 }
+.sale {
+    animation: blink-animation 1s steps(2, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  
 .card{
     background-color: #FFF6EB !important;
     color:#4B2E2E !important;

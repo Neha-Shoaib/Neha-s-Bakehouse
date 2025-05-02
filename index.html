@@ -14,39 +14,41 @@
 </head>
 
 <body>
-  
+
 
   <nav class="navbar  h-25">
 
     <!-- location -->
     <!-- Button trigger modal -->
-     <ul class="list-unstyled">
-    <li> 
-       <button type="button" class="btn navbar-icon ms-2" data-bs-toggle="modal" data-bs-target="#locationModal">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill"
-        viewBox="0 0 16 16">
-        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-      </svg>
-      <span class="d-none d-sm-inline">Change Location</span>
-    </button>
-  </li>
+    <ul class="list-unstyled">
+      <li>
+        <button type="button" class="btn navbar-icon ms-2" data-bs-toggle="modal" data-bs-target="#locationModal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill"
+            viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+          </svg>
+          <span class="d-none d-sm-inline">Change Location</span>
+        </button>
+      </li>
 
-    <!-- Modal -->
-    <div class="modal fade h-100" id="locationModal" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="locationModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered"  role="document">
-        <div class="modal-content">
+      <!-- Modal -->
+      <div class="modal fade h-100" id="locationModal" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="locationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
             <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
-          <div class="modal-body">
-            <div class="d-flex justify-content-center">
-              <img src="assets/logo.png" width="150px" alt="">
-            </div>
-            <h5 class="text-center">Change your Location</h5>
-            <div class="dropdown w-100">
-              <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton" aria-haspopup="true" style="background-color: #4B2E2E !important; ">
+            <div class="modal-body">
+              <div class="d-flex justify-content-center">
+                <img src="assets/logo.png" width="150px" alt="logo">
+              </div>
+              <h5 class="text-center">Change your Location</h5>
+              <div class="dropdown w-100">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" id="dropdownMenuButton" aria-haspopup="true"
+                  style="background-color: #4B2E2E !important; ">
                   Select Location
-              </button>
-              <div class="dropdown-menu w-100 dropdown_locations" aria-labelledby="dropdownMenuButton" >
+                </button>
+                <div class="dropdown-menu w-100 dropdown_locations" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item location-item" href="#">Gulshan-e-Iqbal</a>
                   <a class="dropdown-item location-item" href="#">Gulistan-e-Johar</a>
                   <a class="dropdown-item location-item" href="#">North Nazimabad</a>
@@ -57,105 +59,114 @@
                   <a class="dropdown-item location-item" href="#">Clifton</a>
                   <a class="dropdown-item location-item" href="#">Saddar</a>
                   <a class="dropdown-item location-item" href="#">Korangi</a>
+                </div>
               </div>
-          </div>
-            
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #4b2e2ebc;">Close</button>
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" style="background-color: #4B2E2E !important; border: #4B2E2E !important;">Done</button>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                style="background-color: #4b2e2ebc;">Close</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                style="background-color: #4B2E2E !important; border: #4B2E2E !important;">Done</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- call -->
-    <li><button class="btn navbar-icon  ms-2 mt-2 mb-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill"
-        viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-          d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-      </svg>
-      <span class="d-none d-sm-inline">0336-xxxxxxx</span>
-    </button> 
-    </li>
-   </ul>
-    <!-- logo -->
-<div >
-    <img src="assets/logo.png" width="120px" alt="logo" class="navbar-brand img-fluid d-flex justify-content-center ">
-  </div>
- <ul class="sandwich-cart d-lg-flex d-sm-block list-unstyled">
-  <!-- sandwich -->
-  <li><a class="btn sandwich " data-bs-toggle="offcanvas" href="#SandwichOffcanvas" role="button"
-  aria-controls="offcanvasExample">
-
-  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-  </svg>
-</a>
-</li>
-<div class="offcanvas offcanvas-end" tabindex="-1" id="SandwichOffcanvas" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart!</h5> -->
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body offcanvas-links ">
-    <ul class="list-unstyled">
-      <li class="mb-1 "><a href="index.html">Home</a></li>
-      <li class="mb-1"><a href="about.html">About</a></li>
-      <li class="mb-1"><a href="feedback.html">Feedback</a></li>
-
+      <!-- call -->
+      <li><button class="btn navbar-icon  ms-2 mt-2 mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+          </svg>
+          <span class="d-none d-sm-inline">0336-xxxxxxx</span>
+        </button>
+      </li>
     </ul>
-  </div>
-</div>
+    <!-- logo -->
+    <div>
+      <a href="index.html"><img src="assets/logo.png" width="120px" alt="logo" class="navbar-brand img-fluid d-flex justify-content-center "></a>
+    </div>
+    <ul class="sandwich-cart d-lg-flex d-sm-block list-unstyled">
+      <!-- sandwich -->
+      <li><a class="btn sandwich " data-bs-toggle="offcanvas" href="#SandwichOffcanvas" role="button"
+          aria-controls="offcanvasExample">
 
-  <!-- cart -->
-    <li><a class="btn position-relative cart " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-      aria-controls="offcanvasExample">
-      <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill ">
-        0
-        <span class="visually-hidden">items in cart</span>
-      </span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart2 "
-        viewBox="0 0 16 16">
-        <path
-          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-      </svg>
-    </a>
-  </li>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart!</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body d-flex justify-content-center align-items-center">
-        <div>
-          <img src="assets/empty cart.jpg" alt="empty cart" class="img-fluid ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+          </svg>
+        </a>
+      </li>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="SandwichOffcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart!</h5> -->
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body offcanvas-links ">
+          <ul class="list-unstyled">
+            <li class="mb-1 "><a href="index.html">Home</a></li>
+            <li class="mb-1"><a href="about.html">About</a></li>
+            <li class="mb-1"><a href="feedback.html">Feedback</a></li>
+            <li class="mb-1"><a href="top_sells.html">Top Sells</a></li>
+            <li class="mb-1"><a href="customized_cake.html">Customized Cakes</a></li>
+            <li class="mb-1"><a href="discount.html">Grab your cake <span class="badge bg-danger F">sale!</span></a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
+
+      <!-- cart -->
+      <li><a class="btn position-relative cart " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+          aria-controls="offcanvasExample">
+          <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill ">
+            0
+            <span class="visually-hidden">items in cart</span>
+          </span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart2 "
+            viewBox="0 0 16 16">
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+          </svg>
+        </a>
+      </li>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart!</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex justify-content-center align-items-center">
+          <div>
+            <img src="assets/empty cart.jpg" alt="empty cart" class="img-fluid ">
+          </div>
+        </div>
+      </div>
+      </div>
   </nav>
-  <div id="carouselExampleIndicators" class="carousel slide  " style="height: 80vh;" data-bs-ride="carousel"  >
+  <div id="carouselExampleIndicators" class="carousel slide  " style="height: 80vh;" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
         aria-label="Slide 2"></button>
-     
+
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="image-container">
-        <img src="assets/carousel 2.jpeg"  class="d-block w-100 img-fluid carousel2_image " alt="...">
-      <p class="carousel2_text">"A Deal as Sweet as Our Cakes - Enjoy a Special 50% Discount!"<br><span class="carousel2_text2 ">Why wait? Your dream cake is just one click away!</span><br> <button class="btn btn-light mt-2 carousel_button">Add to Cart!</button></p>
-   
-    </div>
-    </div>
+          <a href="discount.html"><img src="assets/carousel 2.jpeg" class="d-block w-100 img-fluid carousel2_image " alt="..."></a>
+          <p class="carousel2_text">"A Deal as Sweet as Our Cakes - Enjoy a Special 50% Discount!"<br><span
+              class="carousel2_text2 ">Why wait? Your dream cake is just one click away!</span><br> 
+              <a href="discount.html"><button class="btn btn-light mt-2 carousel_button">Add to Cart!</button></a></p>
+
+        </div>
+      </div>
 
       <div class="carousel-item ">
-        <div class="image-container"> 
+        <div class="image-container">
           <img src="assets/carousel1.jpg" alt="background" class="img-fluid d-block w-100 ">
-          <p id="backgroundText">Count the memories not the calories <span><img src="assets/happy.png" alt="happy emoji" style="height: 30px ; width: 30px;"></span> .</p>
+          <p id="backgroundText">Count the memories not the calories <span><img src="assets/happy.png" alt="happy emoji"
+                style="height: 30px ; width: 30px;"></span> .</p>
         </div>
       </div>
     </div>
@@ -170,138 +181,157 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <h2 class="text-center mt-3 mb-4 top_sells" >Our Top Sells <img src="assets/fire.png" alt="" height="32px" ></h2>
-<div class="row g-4  justify-content-center ">
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center ">
-    
-  <div class="card card-hover text-center" style="width: 18rem;">
-    <img src="assets/tres_laches_cake.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Chocolate Tres laches</h5>
-      <p class="card-text">Soaked in love and three kinds of milk —dreamy delight melts in every bite.</p>
-      <a href="#" class="btn btn-primary">Add to Cart</a>
-    </div>
-  </div>
-</div>
+  <h2 class="text-center mt-2 pt-4 top_sells">Our Top Sells <img src="assets/fire.png" alt="" height="32px"></h2>
+  <div class="content-wrapper">
+  <div class="row g-4  justify-content-center m-4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center ">
 
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-  <div class="card card-hover" style="width: 18rem;">
-    <img src="assets/Belgium_chocolate_cake.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Belgium Chocolate</h5>
-      <p class="card-text">Rich, malty, and irresistibly moist — a nostalgic hug in every slice.</p>
-      <a href="#" class="btn btn-primary">Add to Cart</a>
-    </div>
-  </div>
-</div>
-
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-  <div class="card card-hover" style="width: 18rem;">
-    <img src="assets/red_velvet_cake.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Red Velvet</h5>
-      <p class="card-text">"Elegance in red, frosted with love — classic never tasted so good.</p>
-      <a href="#" class="btn btn-primary">Add to Cart</a>
-    </div>
-  </div>
-</div>
-
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-  <div class="card card-hover" style="width: 18rem;">
-    <img src="assets/cadbury_cake.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Cadbury Cake</h5>
-      <p class="card-text">Loaded with Cadbury goodness — for the true chocolate lover’s soul</p>
-      <a href="#" class="btn btn-primary">Add to Cart</a>
-    </div>
-  </div>
-</div>
-
-<a href="#" class="btn text-center d-block mx-auto see_more w-25">See More!</a>
- <h2 class="text-center">Customize your own Cake <span><img src="assets/twinkle.png" alt="" height="32px"></span></h2>
- <div class="row g-4 justify-content-center">
-  
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-  <div class="card card-hover h-52 " style="width: 18rem;">
-    <img src="assets/doll_cake.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Barbie Cake</h5>
-      <p class="card-text">Every princess deserves a cake as pretty as her dreams — handcrafted doll cakes that dazzle!</p>
-      <a href="#" class="btn btn-primary">Add to Cart</a>
-    </div>
-  </div>
-</div>
-
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-  <div class="card card-hover h-70" style="width: 18rem;">
-    <img src="assets/car_cake.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Bear Cake</h5>
-      <p class="card-text">Cuteness overload! Our bear cakes are made to melt hearts — perfect for little celebrations.</p>
-      <a href="#" class="btn btn-primary">Add to Cart</a>
-    </div>
-  </div>
-</div>
-<div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-  <div class="card  card-hover h-70" style="width: 18rem;">
-    <img src="assets/date_cake.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Calender Cake</h5>
-      <p class="card-text">Mark the moment that matters — our calendar cakes make every date unforgettable.</p>
-      <a href="#" class="btn btn-primary">Add to Cart</a>
-    </div>
-  </div>
-</div>
-
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-  <div class="card card-hover h-70" style="width: 18rem;">
-    <img src="assets/wedding_cake.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Wedding Cake</h5>
-      <p class="card-text">Elegance layered with love — our wedding cakes are designed to be as timeless as your ‘I do’.</p>
-      <a href="#" class="btn btn-primary">Add to Cart</a>
-    </div>
-  </div>
-</div>
-</div>
-<a href="#" class="btn text-center d-block mx-auto see_more w-25">See More!</a>
-
-
-<footer>
-  <div class="container">
-    <div class="row text-center text-md-start mt-lg-3">
-
-      <div class="col-12 col-lg-3 col-md-4 mb-3">
-  <figure><img src="assets/logo.png" width="150px" alt="">
-  <figcaption class="ms-4">Where taste meets tradition and excellence is our promise.
-    Every recipe, every layer, every detail—
-    crafted to exceed expectations and sweeten your moments.</figcaption></figure>
-  </div>
-  <ul class="list-unstyled  col-12 col-lg-3 col-md-4 mb-3">
-    <h3>Links</h3>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="feedback.html">Feedback</a></li>
-  </ul>
-
-  <ul class=" list-unstyled col-12 col-lg-3 col-md-4 mb-3">  
-    <h3>Contact Us!</h3>    
-    <li><a href=""><img src="assets/facebook.png" alt="" height="32px" class="mt-1 social_icon"></a></li>
-    <li><a href=""><img src="assets/instagram.png" alt="" height="32px" class="mt-1 social_icon"></a></li>
-    <li><a href=""><img src="assets/whatsapp.png" alt="" height="32px" class="mt-1 social_icon" ></a></li>
-</ul>
-<ul  class="list-unstyled col-12 col-lg-3 col-md-4 mb-3">
-  <li><h3>Location</h3></li>
-  <li><img src="assets/location.png" width="32px"  alt="" class="social_icon me-2"><span >Shop no:x, Street-xx, ABC road, ABC city </span></li>
-  <li><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d452.27327309579147!2d67.08940442651512!3d24.925726504255973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f60a0781265%3A0x2befaba123014ab1!2sSMIT%20Gulshan%20Campus!5e0!3m2!1sen!2s!4v1744562589140!5m2!1sen!2s" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
-</ul>
-</div>
-  </div>
-<hr>
-<p class="text-center copyright_bar ">&#169; 2025 Neha Shoaib. All right reserved.</p>
+      <div class="card card-hover text-center" style="width: 18rem;">
+        <img src="assets/tres_laches_cake.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Chocolate Tres laches</h5>
+          <p class="card-text">Soaked in love and three kinds of milk —dreamy delight melts in every bite.</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
     </div>
 
-</footer>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+      <div class="card card-hover" style="width: 18rem;">
+        <img src="assets/Belgium_chocolate_cake.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Belgium Chocolate</h5>
+          <p class="card-text">Rich, malty, and irresistibly moist — a nostalgic hug in every slice.</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+      <div class="card card-hover" style="width: 18rem;">
+        <img src="assets/red_velvet_cake.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Red Velvet</h5>
+          <p class="card-text">"Elegance in red, frosted with love — classic never tasted so good.</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+      <div class="card card-hover" style="width: 18rem;">
+        <img src="assets/cadbury_cake.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cadbury Cake</h5>
+          <p class="card-text">Loaded with Cadbury goodness — for the true chocolate lover’s soul</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="top_sells.html" class="btn text-center d-block mx-auto see_more w-25">See More!</a>
+  </div>
+    <h2 class="text-center">Customize your own Cake <span><img src="assets/twinkle.png" alt="" height="32px"></span>
+    </h2>
+    <div class="content-wrapper"> 
+    <div class="row g-4 justify-content-center m-4">
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <div class="card card-hover h-52 " style="width: 18rem;">
+          <img src="assets/doll_cake.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Barbie Cake</h5>
+            <p class="card-text">Every princess deserves a cake as pretty as her dreams — handcrafted doll cakes that
+              dazzle!</p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <div class="card card-hover h-70" style="width: 18rem;">
+          <img src="assets/car_cake.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bear Cake</h5>
+            <p class="card-text">Cuteness overload! Our bear cakes are made to melt hearts — perfect for little
+              celebrations.</p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <div class="card  card-hover h-70" style="width: 18rem;">
+          <img src="assets/date_cake.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Calender Cake</h5>
+            <p class="card-text">Mark the moment that matters — our calendar cakes make every date unforgettable.</p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <div class="card card-hover h-70" style="width: 18rem;">
+          <img src="assets/wedding_cake.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Wedding Cake</h5>
+            <p class="card-text">Elegance layered with love — our wedding cakes are designed to be as timeless as your
+              ‘I do’.</p>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <a href="customized_cake.html" class="btn text-center d-block mx-auto see_more w-25">See More!</a>
+
+
+    <footer class="p-3 mt-3 ">
+      <div class="container-fluid">
+        <div class="row text-center text-md-start mt-lg-3">
+
+          <div class="col-12 col-lg-3 col-md-4 mb-3">
+            <figure><img src="assets/logo.png" width="150px" alt="logo">
+              <figcaption class="ms-4">Where taste meets tradition and excellence is our promise.
+                Every recipe, every layer, every detail—
+                crafted to exceed expectations and sweeten your moments.</figcaption>
+            </figure>
+          </div>
+          <ul class="list-unstyled  col-12 col-lg-3 col-md-4 mb-3">
+            <h3>Links</h3>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="top_sells.html">Top Sells</a></li>
+            <li><a href="customized_cake.html">Customized Cakes</a></li>
+            <li><a href="discount.html">Grab your cake </a></li>
+
+          </ul>
+
+          <ul class=" list-unstyled col-12 col-lg-3 col-md-4 mb-3">
+            <h3>Contact Us!</h3>
+            <li><a href=""><img src="assets/facebook.png" alt="facebook_icon" height="32px" class="mt-1 social_icon"></a></li>
+            <li><a href=""><img src="assets/instagram.png" alt="instagram" height="32px" class="mt-1 social_icon"></a></li>
+            <li><a href=""><img src="assets/whatsapp.png" alt="whatsapp" height="32px" class="mt-1 social_icon"></a></li>
+          </ul>
+          <ul class="list-unstyled col-12 col-lg-3 col-md-4 mb-3">
+            <li>
+              <h3>Location</h3>
+            </li>
+            <li><img src="assets/location.png" width="32px" alt="location_icon" class="social_icon me-2"><span>Shop no:x, Street-xx,
+                ABC road, ABC city </span></li>
+            <li><iframe class="map pe-4"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d452.27327309579147!2d67.08940442651512!3d24.925726504255973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f60a0781265%3A0x2befaba123014ab1!2sSMIT%20Gulshan%20Campus!5e0!3m2!1sen!2s!4v1744562589140!5m2!1sen!2s"
+                width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center copyright_bar mb-0">&#169; 2025 Neha Shoaib. All right reserved.</p>
+  </div>
+
+  </footer>
 
 </body>
 

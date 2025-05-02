@@ -2,21 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Our Top Sells</title>
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 <body>
-
-    <nav class="navbar  h-25">
+    <nav class="navbar  h-25 mb-3">
 
         <!-- location -->
-       
+        <!-- Button trigger modal -->
          <ul class="list-unstyled">
         <li> 
            <button type="button" class="btn navbar-icon ms-2" data-bs-toggle="modal" data-bs-target="#locationModal">
@@ -36,7 +35,7 @@
                 <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
               <div class="modal-body">
                 <div class="d-flex justify-content-center">
-                  <img src="assets/logo.png" width="150px" alt="logo">
+                  <a href="index.html"><img src="assets/logo.png" width="150px" alt="logo"></a>
                 </div>
                 <h5 class="text-center">Change your Location</h5>
                 <div class="dropdown w-100">
@@ -78,7 +77,7 @@
        </ul>
         <!-- logo -->
     <div >
-       <a href="index.html"> <img src="assets/logo.png" width="120px" alt="logo" class="navbar-brand img-fluid d-flex justify-content-center "></a>
+        <a href="index.html"><img src="assets/logo.png" width="120px" alt="logo" class="navbar-brand img-fluid d-flex justify-content-center "></a>
       </div>
      <ul class="sandwich-cart d-lg-flex d-sm-block list-unstyled">
       <!-- sandwich -->
@@ -92,6 +91,7 @@
     </li>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="SandwichOffcanvas" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart!</h5> -->
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body offcanvas-links ">
@@ -102,7 +102,6 @@
           <li class="mb-1"><a href="top_sells.html">Top Sells</a></li>
           <li class="mb-1"><a href="customized_cake.html">Customized Cakes</a></li>
           <li class="mb-1"><a href="discount.html">Grab your cake <span class="badge bg-danger sale">sale!</span></a></li>
-
         </ul>
       </div>
     </div>
@@ -134,32 +133,101 @@
         </div>
       </div>
       </nav>
-    <section class="py-5" id="about">
-        <div class="container">
-          <div class="row align-items-center">
+    
+      <h2 class="text-center mb-2">The Crowd Goes Wild For These!</h2>
+      <div class="row g-4  justify-content-center m-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center ">  
+            <div class="card card-hover text-center" style="width: 18rem;">
+                <img src="assets/tres_laches_cake.jpeg" class="card-img-top" alt="tres_laches_cake">
+                <div class="card-body">
+                  <h5 class="card-title">Chocolate Tres laches</h5>
+                  <p class="card-text">Soaked in love and three kinds of milk —dreamy delight melts in every bite.</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
         
-            <div class="col-md-6 mb-4 mb-md-0">
-              <img src="assets/Neha's Bakehouse.jpeg" alt="Neha's Bakehouse" class="img-fluid rounded shadow">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="card card-hover" style="width: 18rem;">
+                <img src="assets/Belgium_chocolate_cake.jpeg" class="card-img-top" alt="Belgium_chocolate_cake">
+                <div class="card-body">
+                  <h5 class="card-title">Belgium Chocolate</h5>
+                  <p class="card-text">Rich, malty, and irresistibly moist — a nostalgic hug in every slice.</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
             </div>
-      
-         
-            <div class="col-md-6">
-              <h2 class="mb-3">Welcome to Neha's Bakehouse</h2>
-              <p class="lead">
-                At Neha's Bakehouse, we believe that every bite should bring a smile. Founded with love and a passion for baking,
-                our little corner of sweetness serves freshly baked treats made from the finest ingredients.
-              </p>
-              <p>
-                Whether you're craving a classic chocolate cake, delicate macarons, or something uniquely custom-made, we’ve got a treat
-                for every occasion. Come for the flavor, stay for the warmth.
-              </p>
-              <a href="#menu" class="btn button mt-3 carousel_button">Explore Our Menu</a>
+        
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="card card-hover" style="width: 18rem;">
+                <img src="assets/red_velvet_cake.jpg" class="card-img-top" alt="red_velvet_cake">
+                <div class="card-body">
+                  <h5 class="card-title">Red Velvet</h5>
+                  <p class="card-text">"Elegance in red, frosted with love — classic never tasted so good.</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div class="container mt-2">
+        
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="card card-hover" style="width: 18rem;">
+                <img src="assets/cadbury_cake.jpeg" class="card-img-top" alt="cadbury_cake">
+                <div class="card-body">
+                  <h5 class="card-title">Cadbury Cake</h5>
+                  <p class="card-text">Loaded with Cadbury goodness — for the true chocolate lover’s soul</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+            <div class="card card-hover text-center" style="width: 18rem;">
+                <img src="assets/kitkat_cake.jpeg" class="card-img-top" alt="kitkat_cake">
+                <div class="card-body">
+                  <h5 class="card-title">Chocolate Tres laches</h5>
+                  <p class="card-text">Soaked in love and three kinds of milk —dreamy delight melts in every bite.</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="card card-hover" style="width: 18rem;">
+                <img src="assets/strawberry_cake.jpeg" class="card-img-top" alt="strawberry_cake">
+                <div class="card-body">
+                  <h5 class="card-title">Belgium Chocolate</h5>
+                  <p class="card-text">Rich, malty, and irresistibly moist — a nostalgic hug in every slice.</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="card card-hover" style="width: 18rem;">
+                <img src="assets/pink_cake.jpeg" class="card-img-top" alt="pink_cake">
+                <div class="card-body">
+                  <h5 class="card-title">Red Velvet</h5>
+                  <p class="card-text">"Elegance in red, frosted with love — classic never tasted so good.</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+              <div class="card card-hover" style="width: 18rem;">
+                <img src="assets/kitkat_cake.jpeg" class="card-img-top" alt="kitkat_cake">
+                <div class="card-body">
+                  <h5 class="card-title">Cadbury Cake</h5>
+                  <p class="card-text">Loaded with Cadbury goodness — for the true chocolate lover’s soul</p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+                    
+  </div>
+
+
+      <footer class="p-3 mt-3 ">
+        <div class="container">
           <div class="row text-center text-md-start mt-lg-3">
       
             <div class="col-12 col-lg-3 col-md-4 mb-3">
@@ -168,6 +236,7 @@
           Every recipe, every layer, every detail—
           crafted to exceed expectations and sweeten your moments.</figcaption></figure>
         </div>
+
         <ul class="list-unstyled  col-12 col-lg-3 col-md-4 mb-3">
           <h3>Links</h3>
           <li><a href="index.html">Home</a></li>
@@ -192,10 +261,10 @@
       </div>
         </div>
       <hr>
-      <p class="text-center copyright_bar mb-0">&#169; 2025 Neha Shoaib. All right reserved.</p>
+      <p class="text-center copyright_bar ">&#169; 2025 Neha Shoaib. All right reserved.</p>
           </div>
       
       </footer>
-            
+      
 </body>
 </html>
